@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name              = 'iCardDirectMobileSDK'
-    s.version           = '1.0.86' #This is where you set the version of the library. Take care to update it for every new SDK version
+    s.version           = '1.0.86'
     s.summary           = 'iCard iCardDirectMobileSDK'
     s.homepage          = 'http://icard.com/'
 
@@ -8,11 +8,8 @@ Pod::Spec.new do |s|
     s.license           = { :type => 'MIT', :file => 'LICENSE' }
 
     s.platform          = :ios
-    s.source            = { :http => 'https://github.com/PeterDraci/sdk/blob/main/iCardDirectMobileSDK.zip’} #This is the URL 
-to the .zip containing the frameworks
+    s.source            = { :http => 'https://github.com/PeterDraci/sdk/releases/download/1.0/iCardDirectMobileSDK.zip’ }
 
-
-    s.dependency 'JGProgressHUD', '= 2.2'
 
     s.ios.deployment_target = '11.0'
     s.ios.vendored_frameworks = 'iCardDirectMobileSDK.framework', 'IPGSharedCode.framework'
